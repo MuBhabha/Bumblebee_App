@@ -12,5 +12,6 @@ namespace BumbleBee.Data
         }
 
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<FundingRequest> FundingRequests { get; set; }
     }
 }

@@ -13,7 +13,7 @@ builder.Services.AddDbContext<DataContext>(
     dbContextOptions => dbContextOptions
         .UseSqlServer(connectionString));
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-	.AddEntityFrameworkStores<DataContext>();
+    .AddEntityFrameworkStores<DataContext>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSingleton<PayPalService>();
 var app = builder.Build();
